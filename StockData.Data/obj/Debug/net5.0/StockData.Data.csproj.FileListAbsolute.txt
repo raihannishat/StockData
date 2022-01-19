@@ -1,0 +1,22 @@
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\bin\Debug\net5.0\StockData.Data.deps.json
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\bin\Debug\net5.0\StockData.Data.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\bin\Debug\net5.0\ref\StockData.Data.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\bin\Debug\net5.0\StockData.Data.pdb
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.AssemblyInfoInputs.cache
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.AssemblyInfo.cs
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.csproj.CoreCompileInputs.cache
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\ref\StockData.Data.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.pdb
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\bin\Debug\net5.0\StockData.Data.deps.json
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\bin\Debug\net5.0\StockData.Data.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\bin\Debug\net5.0\ref\StockData.Data.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\bin\Debug\net5.0\StockData.Data.pdb
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.AssemblyInfoInputs.cache
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.AssemblyInfo.cs
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.csproj.CoreCompileInputs.cache
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\ref\StockData.Data.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Data\obj\Debug\net5.0\StockData.Data.pdb

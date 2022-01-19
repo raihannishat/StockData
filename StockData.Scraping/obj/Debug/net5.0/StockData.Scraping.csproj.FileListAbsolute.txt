@@ -1,0 +1,30 @@
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Scraping.deps.json
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Scraping.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\bin\Debug\net5.0\ref\StockData.Scraping.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Scraping.pdb
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Data.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Data.pdb
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.csproj.AssemblyReference.cache
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.AssemblyInfoInputs.cache
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.AssemblyInfo.cs
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.csproj.CoreCompileInputs.cache
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.csproj.CopyComplete
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\ref\StockData.Scraping.dll
+C:\Users\Raihan Nishat\source\repos\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.pdb
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Scraping.deps.json
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Scraping.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\bin\Debug\net5.0\ref\StockData.Scraping.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Scraping.pdb
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Data.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\bin\Debug\net5.0\StockData.Data.pdb
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.csproj.AssemblyReference.cache
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.AssemblyInfoInputs.cache
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.AssemblyInfo.cs
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.csproj.CoreCompileInputs.cache
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.csproj.CopyComplete
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\ref\StockData.Scraping.dll
+D:\Code\GitHub\aspnetb5\StockData\StockData.Scraping\obj\Debug\net5.0\StockData.Scraping.pdb
