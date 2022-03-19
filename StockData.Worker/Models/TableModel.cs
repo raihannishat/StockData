@@ -6,19 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using StockData.Scraping.BusinessObjects;
+using Microsoft.Extensions.Logging;
 
 namespace StockData.Worker.Models
 {
     public class TableModel
     {
-        private readonly ICompanyService CompanyService;
-        private readonly IStockPriceService StockPriceService;
-        private readonly DataModel _dataModel;
+        private readonly ICompanyService _companyService;
+        private readonly IStockPriceService _stockPriceService;
+        private readonly DataModel _dataModel; 
 
         public TableModel()
         {
-            CompanyService = Worker.AutofacContainer.Resolve<ICompanyService>();
-            StockPriceService = Worker.AutofacContainer.Resolve<IStockPriceService>();
+            _companyService = Worker.AutofacContainer.Resolve<ICompanyService>();
+            _stockPriceService = Worker.AutofacContainer.Resolve<IStockPriceService>();
             _dataModel = new DataModel();
         }
 
@@ -26,14 +27,14 @@ namespace StockData.Worker.Models
             IStockPriceService stockPriceService,
             DataModel dataModel)
         {
-            CompanyService = companyService;
-            StockPriceService = stockPriceService;
+            _companyService = companyService;
+            _stockPriceService = stockPriceService;
             _dataModel = dataModel;
         }
 
         public void Save()
         {
-            if (_dataModel.CurrentStatus.Equals("Open"))
+            if (_dataModel.CurrentStatus.Equals("Closed"))
             {
                 foreach (var item in _dataModel.GetAllData())
                 {
@@ -57,14 +58,13 @@ namespace StockData.Worker.Models
                         Volume = item.Volume,
                     };
 
-                    if (CompanyService.GetByTradeCode(item.TradingCode) == null)
+                    try
                     {
-                        CompanyService.CreateCompany(company);
-			StockPriceService.CreateStockPrice(stockPrice);
+                        _stockPriceService.CreateStockPrice(stockPrice);
                     }
-                    else
+                    catch
                     {
-                        StockPriceService.CreateStockPrice(stockPrice);
+                        _companyService.CreateCompany(company);
                     }
                 }
             }

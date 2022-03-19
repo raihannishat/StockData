@@ -26,8 +26,17 @@ namespace StockData.Worker
             while (!stoppingToken.IsCancellationRequested)
             {
                 var model = new TableModel();
-                model.Save();
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                
+                try
+                {
+                    model.Save();
+                    _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogInformation("Exception : ", ex);
+                }
+
                 await Task.Delay(60000, stoppingToken);
             }
         }

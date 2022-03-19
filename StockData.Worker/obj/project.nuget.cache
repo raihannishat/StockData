@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q46hv+4DZ/VtuA25To081v3YyI4ivWyWS6vleZmwL3GY28TQV4qDLoKsLK00AVNVNuBcuWQExq3uE9PRPXtz7w==",
+  "dgSpecHash": "x1uA60FbVe3OsC5cehq4TJjjDHIDDFnaeIU7p01qQAEL2Lkw7ZnhjrPJXQ8GzvlqninH7vXJGUUIs8IH1CKwZQ==",
   "success": true,
-  "projectFilePath": "D:\\Code\\GitHub\\aspnetb5\\StockData\\StockData.Worker\\StockData.Worker.csproj",
+  "projectFilePath": "D:\\Code\\GitHub\\StockData\\StockData.Worker\\StockData.Worker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
@@ -176,7 +176,8 @@
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Raihan Nishat\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Raihan Nishat\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
