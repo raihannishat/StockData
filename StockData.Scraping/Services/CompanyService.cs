@@ -27,12 +27,5 @@ namespace StockData.Scraping.Services
 
             _scrapingUnitOfWork.Save();
         }
-
-        public Company GetByTradeCode(string tradeCode)
-        {
-            return _mapper.Map<Company>(_scrapingUnitOfWork.CompanyRepository
-                .Get(x => x.TradeCode == tradeCode, string.Empty)
-                .FirstOrDefault());
-        }
     }
 }
