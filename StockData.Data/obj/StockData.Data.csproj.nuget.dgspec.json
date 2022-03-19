@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\GitHub\\aspnetb5\\StockData\\StockData.Data\\StockData.Data.csproj": {}
+    "D:\\Code\\GitHub\\StockData\\StockData.Data\\StockData.Data.csproj": {}
   },
   "projects": {
-    "D:\\Code\\GitHub\\aspnetb5\\StockData\\StockData.Data\\StockData.Data.csproj": {
+    "D:\\Code\\GitHub\\StockData\\StockData.Data\\StockData.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\GitHub\\aspnetb5\\StockData\\StockData.Data\\StockData.Data.csproj",
+        "projectUniqueName": "D:\\Code\\GitHub\\StockData\\StockData.Data\\StockData.Data.csproj",
         "projectName": "StockData.Data",
-        "projectPath": "D:\\Code\\GitHub\\aspnetb5\\StockData\\StockData.Data\\StockData.Data.csproj",
+        "projectPath": "D:\\Code\\GitHub\\StockData\\StockData.Data\\StockData.Data.csproj",
         "packagesPath": "C:\\Users\\Raihan Nishat\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\GitHub\\aspnetb5\\StockData\\StockData.Data\\obj\\",
+        "outputPath": "D:\\Code\\GitHub\\StockData\\StockData.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Raihan Nishat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,16 +61,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[5.0.9, 5.0.9]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[5.0.9, 5.0.9]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[5.0.9, 5.0.9]"
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -78,12 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
