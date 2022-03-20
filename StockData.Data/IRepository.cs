@@ -7,6 +7,6 @@ namespace StockData.Data
 {
     public interface IRepository<TEntity, TKey> where TEntity : IEntity<TKey>
     {
-        void Add(TEntity entity);
+        void AddAll(IList<TEntity> entities);
     }
 }

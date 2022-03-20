@@ -19,9 +19,9 @@ namespace StockData.Data
             _dbSet = _dbContext.Set<TEntity>();
         }
 
-        public void Add(TEntity entity)
+        public void AddAll(IList<TEntity> entities)
         {
-            _dbSet.Add(entity);
+            _dbSet.AddRange(entities);
         }
     }
 }
