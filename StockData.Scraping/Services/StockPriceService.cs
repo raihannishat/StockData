@@ -20,11 +20,16 @@ namespace StockData.Scraping.Services
             _mapper = mapper;
         }
 
-        public void CreateStockPrice(StockPrice stockPrice)
+        public void CreateAllStockPrices(IList<StockPrice> stockPrices)
         {
-            _scrapingUnitOfWork.StockPriceRepository.Add(
-                _mapper.Map<Entities.StockPrice>(stockPrice));
+            var myStockPrices = new List<Entities.StockPrice>();
 
+            foreach (var stockPrice in stockPrices)
+            {
+                myStockPrices.Add(_mapper.Map<Entities.StockPrice>(stockPrice));
+            }
+
+            _scrapingUnitOfWork.StockPriceRepository.AddAll(myStockPrices);
             _scrapingUnitOfWork.Save();
         }
     }

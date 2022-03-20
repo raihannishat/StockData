@@ -20,11 +20,16 @@ namespace StockData.Scraping.Services
             _mapper = mapper;
         }
 
-        public void CreateCompany(Company company)
+        public void CreateAllCompanies(IList<Company> companies)
         {
-            _scrapingUnitOfWork.CompanyRepository.Add(
-                _mapper.Map<Entities.Company>(company));
+            var myCompanies = new List<Entities.Company>();
 
+            foreach (var company in companies)
+            {
+                myCompanies.Add(_mapper.Map<Entities.Company>(company));
+            }
+
+            _scrapingUnitOfWork.CompanyRepository.AddAll(myCompanies);
             _scrapingUnitOfWork.Save();
         }
     }

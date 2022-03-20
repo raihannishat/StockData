@@ -1,9 +1,10 @@
 ﻿using StockData.Scraping.BusinessObjects;
+using System.Collections.Generic;
 
 namespace StockData.Scraping.Services
 {
     public interface IStockPriceService
     {
-        void CreateStockPrice(StockPrice stockPrice);
+        void CreateAllStockPrices(IList<StockPrice> stockPrices);
     }
 }

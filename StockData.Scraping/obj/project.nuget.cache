@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X13scXB+vUkE9xLn4oRr5vlAXkBQaXpwe8CLYHaVyRdgQ+lgnMe5kHM2WtPTgvXIX9XvZw9G2G59RWnZHAqysQ==",
+  "dgSpecHash": "sxhkBiKVE6MpTEvCw8Nu3gktd/8DKHxdaSs+DMx0BxhqzPh6TmVKj1Ewkr8IocuPfaefTuQNdsaUoX9LwoY9lw==",
   "success": true,
   "projectFilePath": "D:\\Code\\GitHub\\StockData\\StockData.Scraping\\StockData.Scraping.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Raihan Nishat\\.nuget\\packages\\htmlagilitypack\\1.11.36\\htmlagilitypack.1.11.36.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
