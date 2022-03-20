@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Autofac;
 using Microsoft.Extensions.Configuration;
-using StockData.Worker.Models;
 
 namespace StockData.Worker
 {
@@ -26,9 +25,6 @@ namespace StockData.Worker
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<TableModel>().AsSelf();
-            builder.RegisterType<DataModel>().AsSelf();
-
             base.Load(builder);
         }
     }

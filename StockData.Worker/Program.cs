@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
-using StockData.Scraping;
+using StockData.Scraping.Dependencies;
 using StockData.Scraping.Contexts;
 using System;
 using System.Collections.Generic;
