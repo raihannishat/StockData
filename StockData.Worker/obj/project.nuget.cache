@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9SoBoKSIKIP9NdcV4/UOX8BC1dgatEetQ8tsvEssaqUurNnSAGn6YBjBd2k4Pjn/oxcpBtl+c/PaUKkeFKBviQ==",
+  "dgSpecHash": "V0wjaPuoY+5r1+kvU9AlTrXWNY3vMj3EfTTE19glsvdGtXXBTmvWlc66YQ4QgQ3eIXRWCg6P1abI/ybFRDC/4A==",
   "success": true,
   "projectFilePath": "D:\\Code\\GitHub\\StockData\\StockData.Worker\\StockData.Worker.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.9\\microsoft.entityframeworkcore.design.5.0.9.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.9\\microsoft.entityframeworkcore.relational.5.0.9.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.9\\microsoft.entityframeworkcore.sqlserver.5.0.9.nupkg.sha512",
+    "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.9\\microsoft.entityframeworkcore.tools.5.0.9.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Raihan Nishat\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
