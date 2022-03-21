@@ -10,27 +10,46 @@ namespace StockData.Scraping.Services
 {
     public class ScrapingService : IScrapingService
     {
-        private readonly string _url;
+        
         private readonly HtmlWeb _web;
         private readonly HtmlDocument _document;
-        private readonly HtmlNode[] _nodes;
-        private readonly string _currentStatus;
         private readonly ICompanyService _companyService;
         private readonly IStockPriceService _stockPriceService;
 
+        private string _url
+        {
+            get
+            {
+                return "https://www.dse.com.bd/latest_share_price_scroll_l.php";
+            }
+        }
+
+        private HtmlNode[] _nodes 
+        {
+            get
+            {
+                return _document.DocumentNode
+                .SelectNodes("//table[@class='table table-bordered background-white shares-table fixedHeader']")
+                .ToArray();
+            }
+        }
+
+        private string _currentStatus 
+        {
+            get
+            {
+                return _document.DocumentNode
+                    .SelectSingleNode("//div[@class='HeaderTop']/span[@class='time']/span[@class='green']")
+                    .InnerText; ;
+            }
+        }
+
         public ScrapingService(ICompanyService companyService, IStockPriceService stockPriceService)
         {
-            _url = "https://www.dse.com.bd/latest_share_price_scroll_l.php";
             _web = new HtmlWeb();
             _document = _web.Load(_url);
             _companyService = companyService;
             _stockPriceService = stockPriceService;
-            _currentStatus = _document.DocumentNode
-                    .SelectSingleNode("//div[@class='HeaderTop']/span[@class='time']/span[@class='green']")
-                    .InnerText;
-            _nodes = _document.DocumentNode
-                .SelectNodes("//table[@class='table table-bordered background-white shares-table fixedHeader']")
-                .ToArray();
         }
 
         public void SaveStockData()
