@@ -68,8 +68,8 @@ namespace StockData.Scraping.Services
 
         private (IList<Company> Companies, IList<StockPrice> StockPrices) GetAllCompanyAndStockPrice()
         {
-            IList<Company> companies = new List<Company>();
-            IList<StockPrice> stockPrices = new List<StockPrice>();
+            var companies = new List<Company>();
+            var stockPrices = new List<StockPrice>();
 
             foreach (var node in _nodes)
             {
