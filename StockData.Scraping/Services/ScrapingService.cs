@@ -10,7 +10,6 @@ namespace StockData.Scraping.Services
 {
     public class ScrapingService : IScrapingService
     {
-        
         private readonly HtmlWeb _web;
         private readonly HtmlDocument _document;
         private readonly ICompanyService _companyService;
