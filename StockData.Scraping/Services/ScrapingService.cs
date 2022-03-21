@@ -17,10 +17,7 @@ namespace StockData.Scraping.Services
 
         private string _url
         {
-            get
-            {
-                return "https://www.dse.com.bd/latest_share_price_scroll_l.php";
-            }
+            get { return "https://www.dse.com.bd/latest_share_price_scroll_l.php"; }
         }
 
         private HtmlNode[] _nodes 
@@ -28,8 +25,8 @@ namespace StockData.Scraping.Services
             get
             {
                 return _document.DocumentNode
-                .SelectNodes("//table[@class='table table-bordered background-white shares-table fixedHeader']")
-                .ToArray();
+                    .SelectNodes("//table[@class='table table-bordered background-white shares-table fixedHeader']")
+                    .ToArray();
             }
         }
 
