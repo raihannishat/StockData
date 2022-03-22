@@ -14,9 +14,9 @@ SELECT [Id]
       ,[Trade]
       ,[Value]
       ,[Volume]
-  FROM [StockDataDB].[dbo].[StockPrices]
+  FROM [StockPriceBrokerDB].[dbo].[StockPrices]
 ===========================================================================================================
 2. Show all Companies -> SQL Query
 SELECT [Id] ,[TradeCode]
-FROM [StockDataDB].[dbo].[Companies]
+FROM [StockPriceBrokerDB].[dbo].[Companies]
 ===========================================================================================================
