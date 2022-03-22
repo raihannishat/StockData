@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StockData.Scraping.Services
 {
-    public class ScrapingService : IScrapingService
+    public class ScrapingService : IScrapingService, IDisposable
     {
         private readonly HtmlWeb _web;
         private readonly HtmlDocument _document;
@@ -100,6 +100,11 @@ namespace StockData.Scraping.Services
             }
 
             return (companies, stockPrices);
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }
