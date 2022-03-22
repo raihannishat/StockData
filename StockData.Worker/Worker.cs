@@ -23,10 +23,10 @@ namespace StockData.Worker
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            var scrapingService = AutofacContainer.Resolve<IScrapingService>();
-
             while (!stoppingToken.IsCancellationRequested)
             {
+                var scrapingService = AutofacContainer.Resolve<IScrapingService>();
+
                 try
                 {
                     scrapingService.SaveStockData();
@@ -37,6 +37,7 @@ namespace StockData.Worker
                     _logger.LogInformation(ex, DateTimeOffset.Now.ToString());
                 }
 
+                scrapingService.Dispose();
                 await Task.Delay(60000, stoppingToken);
             }
         }
