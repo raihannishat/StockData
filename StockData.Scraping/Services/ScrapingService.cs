@@ -10,46 +10,34 @@ namespace StockData.Scraping.Services
 {
     public class ScrapingService : IScrapingService, IDisposable
     {
-        private readonly HtmlWeb _web;
-        private readonly HtmlDocument _document;
-        private readonly ICompanyService _companyService;
-        private readonly IStockPriceService _stockPriceService;
-
-        private string _url
-        {
-            get { return "https://www.dse.com.bd/latest_share_price_scroll_l.php"; }
-        }
-
-        private HtmlNode[] _nodes 
-        {
-            get
-            {
-                return _document.DocumentNode
-                    .SelectNodes("//table[@class='table table-bordered background-white shares-table fixedHeader']")
-                    .ToArray();
-            }
-        }
-
-        private string _currentStatus 
-        {
-            get
-            {
-                return _document.DocumentNode
-                    .SelectSingleNode("//div[@class='HeaderTop']/span[@class='time']/span[@class='green']")
-                    .InnerText; ;
-            }
-        }
+        private HtmlWeb _web;
+        private HtmlDocument _document;
+        private ICompanyService _companyService;
+        private IStockPriceService _stockPriceService;
+        private string _url;
+        private HtmlNode[] _nodes;
+        private string _currentStatus;
+        private IList<Company> _companies;
+        private IList<StockPrice> _stockPrices;
 
         public ScrapingService(ICompanyService companyService, IStockPriceService stockPriceService)
         {
-            _web = new HtmlWeb();
-            _document = _web.Load(_url);
             _companyService = companyService;
             _stockPriceService = stockPriceService;
         }
 
         public void SaveStockData()
         {
+            _url = "https://www.dse.com.bd/latest_share_price_scroll_l.php";
+            _web = new HtmlWeb();
+            _document = _web.Load(_url);
+            _currentStatus = _document.DocumentNode
+                                .SelectSingleNode("//div[@class='HeaderTop']/span[@class='time']/span[@class='green']")
+                                .InnerText;
+            _nodes = _document.DocumentNode
+                        .SelectNodes("//table[@class='table table-bordered background-white shares-table fixedHeader']")
+                        .ToArray();
+
             if (_currentStatus.Equals("Open"))
             {
                 try
@@ -65,12 +53,11 @@ namespace StockData.Scraping.Services
 
         private (IList<Company> Companies, IList<StockPrice> StockPrices) GetAllCompanyAndStockPrice()
         {
-            var companies = new List<Company>();
-            var stockPrices = new List<StockPrice>();
-
             foreach (var node in _nodes)
             {
                 var stockInfo = node.SelectNodes(".//tr/td");
+                _companies = new List<Company>();
+                _stockPrices = new List<StockPrice>();
 
                 for (int i = 0; i < stockInfo.Count; i += 11)
                 {
@@ -94,12 +81,12 @@ namespace StockData.Scraping.Services
                         Volume = stockInfo[i + 10].InnerText.Trim()
                     };
 
-                    companies.Add(company);
-                    stockPrices.Add(stockPrice);
+                    _companies.Add(company);
+                    _stockPrices.Add(stockPrice);
                 }
             }
 
-            return (companies, stockPrices);
+            return (_companies, _stockPrices);
         }
 
         public void Dispose()
