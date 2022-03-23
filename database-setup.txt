@@ -4,7 +4,7 @@
 ===========================================================================================================
 1. Show all StockPrices -> SQL Query
 SELECT [Id]
-      ,[CompanyId]
+      ,[TradeCode]
       ,[LastTradingPrice]
       ,[High]
       ,[Low]
@@ -14,9 +14,11 @@ SELECT [Id]
       ,[Trade]
       ,[Value]
       ,[Volume]
-  FROM [StockPriceBrokerDB].[dbo].[StockPrices]
+      ,[Time]
+  FROM [StockDataDB].[dbo].[StockPrices]
 ===========================================================================================================
 2. Show all Companies -> SQL Query
-SELECT [Id] ,[TradeCode]
-FROM [StockPriceBrokerDB].[dbo].[Companies]
+SELECT [Id]
+      ,[TradeCode]
+  FROM [StockDataDB].[dbo].[Companies]
 ===========================================================================================================
