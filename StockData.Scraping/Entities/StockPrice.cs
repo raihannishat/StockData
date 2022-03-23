@@ -11,6 +11,7 @@ namespace StockData.Scraping.Entities
     {
         public int Id { get; set; }
         public int CompanyId { get; set; }
+        public string TradeCode { get; set; }
         public string LastTradingPrice { get; set; }
         public string High { get; set; }
         public string Low { get; set; }
@@ -20,6 +21,7 @@ namespace StockData.Scraping.Entities
         public string Trade { get; set; }
         public string Value { get; set; }
         public string Volume { get; set; }
+        public string Time { get; set; }
         public Company Company { get; set; }
     }
 }

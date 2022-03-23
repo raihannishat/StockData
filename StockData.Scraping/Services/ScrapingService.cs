@@ -70,6 +70,7 @@ namespace StockData.Scraping.Services
                     var stockPrice = new StockPrice
                     {
                         CompanyId = company.Id,
+                        TradeCode = company.TradeCode,
                         LastTradingPrice = stockInfo[i + 2].InnerText.Trim(),
                         High = stockInfo[i + 3].InnerText.Trim(),
                         Low = stockInfo[i + 4].InnerText.Trim(),
@@ -78,7 +79,8 @@ namespace StockData.Scraping.Services
                         Change = stockInfo[i + 7].InnerText.Trim(),
                         Trade = stockInfo[i + 8].InnerText.Trim(),
                         Value = stockInfo[i + 9].InnerText.Trim(),
-                        Volume = stockInfo[i + 10].InnerText.Trim()
+                        Volume = stockInfo[i + 10].InnerText.Trim(),
+                        Time = DateTime.Now.ToString(),
                     };
 
                     _companies.Add(company);

@@ -17,9 +17,9 @@ namespace StockData.Scraping.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Company>()
-                .HasMany(s => s.StockPrices)
-                .WithOne(c => c.Company)
+            modelBuilder.Entity<StockPrice>()
+                .HasOne(c => c.Company)
+                .WithMany(s => s.StockPrices)
                 .HasForeignKey(f => f.CompanyId);
 
             base.OnModelCreating(modelBuilder);
