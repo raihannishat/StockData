@@ -9,7 +9,7 @@ using StockData.Scraping.Contexts;
 namespace StockData.Worker.Data.Migrations
 {
     [DbContext(typeof(ScrapingDbContext))]
-    [Migration("20210908100119_AddCompanyAndStockPrice")]
+    [Migration("20220323041612_AddCompanyAndStockPrice")]
     partial class AddCompanyAndStockPrice
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,7 +60,13 @@ namespace StockData.Worker.Data.Migrations
                     b.Property<string>("Low")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Time")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Trade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TradeCode")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Value")

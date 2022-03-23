@@ -58,7 +58,13 @@ namespace StockData.Worker.Data.Migrations
                     b.Property<string>("Low")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Time")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Trade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TradeCode")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Value")

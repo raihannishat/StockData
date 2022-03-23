@@ -26,6 +26,7 @@ namespace StockData.Worker.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CompanyId = table.Column<int>(type: "int", nullable: false),
+                    TradeCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LastTradingPrice = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     High = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Low = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -34,7 +35,8 @@ namespace StockData.Worker.Data.Migrations
                     Change = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Trade = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Value = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Volume = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Volume = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Time = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
