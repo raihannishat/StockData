@@ -25,6 +25,8 @@ namespace StockData.Worker
         {
             while (!stoppingToken.IsCancellationRequested)
             {
+                await Task.Delay(60000, stoppingToken);
+
                 var scrapingService = AutofacContainer.Resolve<IScrapingService>();
 
                 try
@@ -38,7 +40,6 @@ namespace StockData.Worker
                 }
 
                 scrapingService.Dispose();
-                await Task.Delay(60000, stoppingToken);
             }
         }
     }
