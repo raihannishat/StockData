@@ -1,0 +1,108 @@
+﻿@model CompanyModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Styles
+{
+<!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+<!-- DataTables -->     
+<link rel="stylesheet" href="/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="/dist/css/adminlte.min.css">
+}
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Dhaka Stock Exchange</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="companies" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Company ID</th>
+                                    <th>Trade Code</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>Company ID</th>
+                                    <th>Trade Code</th>
+                                    <th>Details</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+@section Scripts
+{
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="/plugins/jszip/jszip.min.js"></script>
+<script src="/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/dist/js/demo.js"></script>
+
+<script>
+    $(function () {
+      //$("#companies").DataTable({
+      //  "responsive": true, "lengthChange": true, "autoWidth": false,
+      //  "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      //}).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#companies').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/home/GetCompaniesData",
+                "columnDefs": [
+                    {
+                        "orderable": false,
+                        "targets": 2,
+                        "render": function (data, type, row) {
+                            return `<button type="submit"
+                            class="btn btn-primary btn-sm" 
+                            onclick="window.location.href='/home/price?tradecode=${data}'" value='${data}'>
+                                All Prices</button>`;
+                        }
+                    }
+                ]
+
+            });
+    });
+</script>
+}
